@@ -3,38 +3,39 @@
 
 using namespace std;
 
+// estructura-----------------------------------------------------------------------------------------
 struct Vehiculos
 {
-    string idPlaca;
-} vehiculo[];
+    string IdPlaca;
 
-struct Estacionamiento
-{
-    Vehiculos;
-    bool disponibilidad=true;
-}estacionamiento[50];
+} vehiculo[4];
 
+// Funciones------------------------------------------------------------------------------------------
+void introducirDatos();
+void buscadorPlacas();
 
-void IntroducirDatos();
-void BuscadorPlacas();
+// Variables
 
+// main-------------------------------------------------------------------------------------------------
 int main()
 {
-
+    introducirDatos();
+    buscadorPlacas();
     return 0;
 }
 
-void IntroducirDatos()
+void introducirDatos()
 {
-     cout << "porfavor ingrese las placas de los vehiculos" << endl;
+    cout << "porfavor ingrese las placas de los vehiculos" << endl;
     for (int i = 0; i <= 3; i++)
     {
         cin >> vehiculo[i].placaVehiculo;
     }
 }
 
-void BuscadorPlacas()
+void buscadorPlacas()
 {
+
     string placa;
     int posicion;
     cout << "Ingrese la placa del vehiculo que busca: ";
@@ -61,4 +62,3 @@ void BuscadorPlacas()
         cout << "No se encontro su vehiculo" << endl;
     }
 }
-
