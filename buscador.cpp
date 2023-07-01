@@ -8,7 +8,7 @@ struct Vehiculos
 {
     string IdPlaca;
 
-} vehiculo[4];
+} vehiculo[50];
 
 // Funciones------------------------------------------------------------------------------------------
 void buscadorPlacas();
@@ -22,12 +22,11 @@ int main()
     return 0;
 }
 
-
 void buscadorPlacas()
 {
 
-    string placa;
-    int posicion;
+    string placa; // Ingresa la placa a buscar, es una variable distinta a idPlaca
+    int posicion; // Guardara el valor de la variable "i"
     cout << "Ingrese la placa del vehiculo que busca: ";
     cin >> placa;
     bool encontrado = false;
@@ -36,13 +35,12 @@ void buscadorPlacas()
     {
         if (placa == vehiculo[i].IdPlaca)
         {
-            encontrado = true;
+            encontrado = true; // Al ingresar los datos de un vehiculo en la posicion "i" el valor de encontrado cambiara
             posicion = i;
             break;
         }
     }
 
- 
     if (encontrado)
     {
         cout << "Su vehiculo se encuentra en el estacionamiento: " << posicion << endl;
