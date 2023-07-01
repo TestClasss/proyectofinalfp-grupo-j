@@ -29,7 +29,7 @@ void introducirDatos()
     cout << "porfavor ingrese las placas de los vehiculos" << endl;
     for (int i = 0; i <= 3; i++)
     {
-        cin >> vehiculo[i].placaVehiculo;
+        cin >> vehiculo[i].IdPlaca;
     }
 }
 
@@ -47,7 +47,7 @@ void buscadorPlacas()
         if (placa == vehiculo[i].IdPlaca)
         {
             encontrado = true;
-            lugar = i;
+            posicion = i;
             break;
         }
     }
