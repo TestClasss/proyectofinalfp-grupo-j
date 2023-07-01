@@ -34,11 +34,11 @@ void Ingresoautomovil()
      do
      {
 
-          cout << "favor ingrese la posicion que desea" << endl;
+          cout << "Por favor ingrese la posicion que desea: " << endl;
           cin >> i;
           if (estacionamiento[i].Disponibilidad == true)
           {
-               cout << "Favor ingrese los digitos de su placa " << endl;
+               cout << "Por favor ingrese los digitos de su placa: " << endl;
                cin >> automovil.idPlaca;
                estacionamiento[i].Disponibilidad = false;
                TipodeVehiculo = automovil.idPlaca.length();
