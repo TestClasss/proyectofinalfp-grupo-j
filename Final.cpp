@@ -28,16 +28,16 @@ int main()
 }
 
 void Ingresoautomovil()
-{
+{// Variables para contar la cantidad de vehículos de cada tipo
      int opcion;
      int i, TipodeVehiculo, carro = 0, moto = 0, discapacitado = 0;
      do
      {
-
+// Se solicita al usuario que ingrese la posición deseada para estacionar el automóvil
           cout << "Por favor ingrese la posicion que desea: " << endl;
           cin >> i;
           if (estacionamiento[i].Disponibilidad == true)
-          {
+          {// Se solicita al usuario que ingrese los dígitos de la placa del automóvil
                cout << "Por favor ingrese los digitos de su placa: " << endl;
                cin >> automovil.idPlaca;
                estacionamiento[i].Disponibilidad = false;
