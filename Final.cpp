@@ -34,7 +34,7 @@ void Ingresoautomovil()
      do
      {
 // Se solicita al usuario que ingrese la posición deseada para estacionar el automóvil
-          cout << "Por favor ingrese la posicion que desea: " << endl
+          cout << "Por favor ingrese la posicion que desea: " << endl;
           cin >> i;
           if (estacionamiento[i].Disponibilidad == true)
           {// Se solicita al usuario que ingrese los dígitos de la placa del automóvil
