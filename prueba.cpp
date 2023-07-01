@@ -4,6 +4,7 @@ double horasParqueo;
 double costoHora = 0.50;
 int placaVehiculo;
 int op;
+double totalParqueo = horasParqueo * costoHora;
 int main()
 {
      cout << "Ingrese la cantidad de tiempo en el parqueo" << endl;
@@ -14,7 +15,6 @@ int main()
 // Declarar funcion de mostrar tickets
 void mostrarTicket(double horasParqueo, double costoHora)
 {
-     double totalParqueo = horasParqueo * costoHora;
      cout << "-------------------------------------\n";
      cout << "\n";
      cout << "           Ticket del parqueo";
