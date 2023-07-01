@@ -1,10 +1,8 @@
-#include <iostream>
-using namespace std;
 void mostrarTicket(double horasParqueo, double costoHora);
 double horasParqueo;
 double costoHora = 0.50;
 int placaVehiculo;
-int size, op;
+int op;
 int main()
 {
     do
