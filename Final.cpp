@@ -30,7 +30,7 @@ int main()
 void Ingresoautomovil()
 {
      int opcion;
-     int i, TipodeVehiculo, carro = 0, moto = 0, discapacitado = 0;
+     int i, tipodeVehiculo, carro = 0, moto = 0, discapacitado = 0;
      do
      {
 // Se solicita al usuario que ingrese la posición deseada para estacionar el automóvil
@@ -41,8 +41,8 @@ void Ingresoautomovil()
                cout << "Por favor ingrese los digitos de su placa: " << endl;
                cin >> automovil.idPlaca;
                estacionamiento[i].Disponibilidad = false;
-               TipodeVehiculo = automovil.idPlaca.length();
-               if (TipodeVehiculo == 8)
+               tipodeVehiculo = automovil.idPlaca.length();
+               if (tipodeVehiculo == 8)
                {
                     carro++;
                     cout << carro << endl;
@@ -51,7 +51,7 @@ void Ingresoautomovil()
                          cout << "Lo sentimos ya no hay parqueos dispoibles";
                     }
                }
-               else if (TipodeVehiculo == 6)
+               else if (tipodeVehiculo == 6)
                {
                     moto++;
                     cout << moto << endl;
@@ -60,7 +60,7 @@ void Ingresoautomovil()
                          cout << "Lo sentimos ya no hay parqueos dispoibles";
                     }
                }
-               else if (TipodeVehiculo == 4)
+               else if (tipodeVehiculo == 4)
                {
                     discapacitado++;
                     cout << discapacitado << endl;
@@ -69,7 +69,7 @@ void Ingresoautomovil()
                          cout << "Lo sentimos ya no hay parqueos dispoibles" << endl;
                     }
                }
-               else if (TipodeVehiculo != 4 & TipodeVehiculo != 6 & TipodeVehiculo != 8)
+               else if (tipodeVehiculo != 4 & tipodeVehiculo != 6 & tipodeVehiculo != 8)
                {
                     cout << "numero de placa invalido" << endl;
                }
