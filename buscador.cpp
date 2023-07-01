@@ -11,7 +11,6 @@ struct Vehiculos
 } vehiculo[4];
 
 // Funciones------------------------------------------------------------------------------------------
-void introducirDatos();
 void buscadorPlacas();
 
 // Variables
@@ -19,19 +18,10 @@ void buscadorPlacas();
 // main-------------------------------------------------------------------------------------------------
 int main()
 {
-    introducirDatos();
     buscadorPlacas();
     return 0;
 }
 
-void introducirDatos()
-{
-    cout << "porfavor ingrese las placas de los vehiculos" << endl;
-    for (int i = 0; i <= 3; i++)
-    {
-        cin >> vehiculo[i].IdPlaca;
-    }
-}
 
 void buscadorPlacas()
 {
