@@ -4,6 +4,7 @@
 using namespace std;
 
 void mostrarParqueosDisponibles(const string tipoParqueo, int numParqueos) {
+    // Funcion para mostrar los parqueos disponibles de un tipo específico
     cout << "Parqueos disponibles para " << tipoParqueo <<endl;
     for (int i = 1; i <= numParqueos; i++) {
         cout << "Parqueo " << i <<"\t";
@@ -15,20 +16,22 @@ void mostrarParqueosDisponibles(const string tipoParqueo, int numParqueos) {
 }
 
 int main() {
-    const int parqueosAutomovil = 30;
-    const int parqueosMoto = 15;
-    const int parqueosDiscapacitados = 5;
+    const int parqueosAutomovil = 30;// Numero de parqueos disponibles para automoviles
+    const int parqueosMoto = 15;// Numero de parqueos disponibles para motocicletas
+    const int parqueosDiscapacitados = 5;// Numero de parqueos disponibles para discapacitados
 
-    int opcion;
-    string placa; 
+
+    int opcion;// Variable para almacenar la opcion seleccionada
+    string placa; // Variable para almacenar el numero de placa
 
     do {
         cout << "= Menu Principal ="<<endl;
-        cout << "1. Administrador"<<endl;
-        cout << "2. Usuario"<<endl;
-        cout << "3. Salir"<<endl;
+        cout << "1. Administrador"<<endl;// Opcion para el administrador
+        cout << "2. Usuario"<<endl; //Opcion para el usuario
+        cout << "3. Salir"<<endl;// Opcion para salir del programa
         cout << "Ingrese una opcion: ";
-        cin >> opcion;
+        cin >> opcion;// Lee la opcion seleccionada por el usuario
+
 
         switch (opcion) {
             case 1: {
@@ -44,16 +47,16 @@ int main() {
                 cin >> placa;
 
                 if (placa.size() == 8) {
-                    mostrarParqueosDisponibles("automoviles", parqueosAutomovil);
+                    mostrarParqueosDisponibles("automoviles", parqueosAutomovil);// Muestra los parqueos disponibles para automoviles si la placa es de 8
                 }
                 else if (placa.size() == 6) {
-                    mostrarParqueosDisponibles("motocicletas", parqueosMoto);
+                    mostrarParqueosDisponibles("motocicletas", parqueosMoto);// Muestra los parqueos disponibles para las motocicletaas si la placa es de 6
                 }
                 else if (placa.size() == 4) {
-                    mostrarParqueosDisponibles("discapacitados", parqueosDiscapacitados);
+                    mostrarParqueosDisponibles("discapacitados", parqueosDiscapacitados);// Muestra los parqueos disponibles para discapacitados si la placa es de 4
                 }
                 else {
-                    cout << "La longitud de la placa es incorrecta"<<endl;
+                    cout << "La longitud de la placa es incorrecta"<<endl;// Muestra un mensaje de error si la placa no coincide con ningun tamaño de placa
                 }
                 break;
             }
@@ -78,7 +81,8 @@ int main() {
 
         cout << endl;
 
-    } while (opcion != 3);
+    } while (opcion != 3);// Repetir el bucle mientras la opción seleccionada no sea 3
+
 
     return 0;
 }
