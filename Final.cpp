@@ -1,5 +1,5 @@
 // Funcion para mostrar la disponibilidad de los parqueos
-void mostrarparqueos()
+void MostrarParqueos()
 {
     // Recorrer los parqueos del 0 al 50
      for (int i = 0; i <= 50; i++)
