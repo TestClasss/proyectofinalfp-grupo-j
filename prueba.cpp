@@ -23,7 +23,7 @@ void mostrarTicket(double horasParqueo, double costoHora)
      cout << "*    Numero de placa";
      cout << "\n"
           << "\n";
-     cout << "*    " << placaVehiculo;
+     cout << "*    " << automovil.idPlaca;
      cout << "\n"
           << "\n";
      cout << "*    Tiempo en el parqueo";
