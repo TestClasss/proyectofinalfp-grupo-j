@@ -1,18 +1,3 @@
-// Función
-void mostrarTicket(double horasParqueo, double costoHora);
-double horasParqueo;
-double costoHora = 0.50;
-int placaVehiculo;
-int op;
-double totalParqueo = horasParqueo * costoHora;
-int main()
-{
-     cout << "Ingrese la cantidad de tiempo en el parqueo" << endl;
-     cin >> horasParqueo;
-     mostrarTicket(horasParqueo, costoHora);
-     return 0;
-}
-// Declarar funcion de mostrar tickets
 void mostrarTicket(double horasParqueo, double costoHora)
 {
      cout << "-------------------------------------\n";
