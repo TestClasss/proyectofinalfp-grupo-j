@@ -8,7 +8,7 @@ struct Vehiculos
 {
     string IdPlaca;
 
-} vehiculo[50];
+} vehiculo[51];
 
 // Funciones------------------------------------------------------------------------------------------
 void buscadorPlacas();
@@ -30,7 +30,7 @@ void buscadorPlacas()
     cout << "Ingrese la placa del vehiculo que busca: ";
     cin >> placa;
     bool encontrado = false;
-
+    
     for (int i = 0; i <= 3; i++)
     {
         if (placa == vehiculo[i].IdPlaca)
