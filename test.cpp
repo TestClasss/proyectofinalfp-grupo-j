@@ -4,8 +4,6 @@
 #include <fstream>
 using namespace std;
 
-const int MaxVehiculos = 50;
-
 struct carro
 {
  string IdPlaca;
@@ -15,7 +13,7 @@ struct Estacionamiento
 {
   struct carro;
   bool disponibilidad=true;
-}estacionamiento[MaxVehiculos];
+}estacionamiento[51];
 
 
 
@@ -98,75 +96,7 @@ bienvenida:
 return 0;
 }
 
-/*
-void AgregarAuto();
-void RegistroEstacionamiento();
-void leerarchvivo();
 
-
-int opcioncaso2;
-       cout<<"Desea guaradar los datos ingresados?"<<endl
-       <<"(1)Si"<<endl
-       <<"(0)No"<<endl;
-       cin>> opcioncaso2;
-       system("cls");
-       if(opcioncaso2==1)
-       {
-        RegistroEstacionamiento();
-       }
-       else if (opcioncaso2==0)
-       {
-        cout<<"Gracias por su visita, vuelva pronto...";
-       }
-
-
-
-
-void AgregarAuto()
-{
-    // Solicitando Datos
-    for (int i = 0; i < MaxVehiculos; i++)
-    {
-        cout << "Favor digite el numero de identidicacion de su placa: ";
-        cin >> estacionamiento[i].IdPlaca;
-        cout << "Favor digite su hora de ingreso: ";
-        cin >> estacionamiento[i].HoraIngreso;
-        estacionamiento[i].disponibilidad=true;
-        break;
-    }
-system("cls");
-}
-
-void RegistroEstacionamiento()
-{
- fstream fichero;
- fichero.open("RegistroEstacionamiento.txt", ios::app|ios::out);
- if (fichero.fail() == true)
- {
- cout << "No se logro crear el archivo";
- }    
- for (int i = 0; i < MaxVehiculos; i++)
- {
- fichero << estacionamiento[i].IdPlaca << " - " << estacionamiento[i].HoraIngreso<<"\n";
- break;
- }
- fichero.close();
-}
-
-void leerarchvivo(){
-    ifstream fichero;
-    fichero.open("RegistroEstacionamiento.txt", ios::in);
-    string line = "";
-    string buscarplaca;
-    cout<<"Escribe la placa a buscar: ";
-    cin>> buscarplaca;
-    int Tipovehiculobuscado;
-    Tipovehiculobuscado=buscarplaca.length();
-    while (getline (fichero, line)){
-        if (line==buscarplaca)
-        cout<<"su auto se escuentra en el estacionamiento";
-    }
-}*/
 
 
    
