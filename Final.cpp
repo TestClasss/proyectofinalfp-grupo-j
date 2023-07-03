@@ -246,5 +246,3 @@ salida:
          << endl;
     return 0;
 }
-
-
