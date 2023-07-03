@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <fstream>
+#include <AutoCinema.h>
 using namespace std;
 
 struct carro
