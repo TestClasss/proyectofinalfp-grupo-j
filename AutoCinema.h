@@ -1,0 +1,10 @@
+void Ingresoautomovil();
+void MostrarParqueos();
+void GuardarDatos();
+void mostrarAutoConMayorFrecuencia(int carro, int moto, int discapacitado);
+void buscadorPlacas();
+void Bloquearparqueos();
+void GuardarporDia();
+void escituraArchivoDia();
+void MostrarVehiculos();
+void mostrarTicket(double horasParqueo, double costoHora);
