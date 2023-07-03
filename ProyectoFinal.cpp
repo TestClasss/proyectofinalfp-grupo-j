@@ -23,13 +23,13 @@ struct Estacionamiento
 void Ingresoautomovil();
 void MostrarParqueos();
 void GuardarDatos();
-void mostrarAutoConMayorFrecuencia(int carro, int moto, int discapacitado);
+void mostrarAutoConMayorFrecuencia();
 void buscadorPlacas();
 void Bloquearparqueos();
 void GuardarporDia();
 void escituraArchivoDia();
 void MostrarVehiculos();
-void mostrarTicket(double horasParqueo, double costoHora);
+void mostrarTicket();
 
 // Declaracion de variables globales----------------------------------------------------------------------------------
 int opBienvenidaSalida;
@@ -99,7 +99,7 @@ bienvenida:
             break;
         case 4:
         //Llamado a la funcion para mostrar auto con mayor frecuencia
-        mostrarAutoConMayorFrecuencia(carro,moto,discapacitado);
+        mostrarAutoConMayorFrecuencia();
            // Sentencia para seguir ejecutando el programa
         cout << "Desea volver al menu principal?" << endl
                  << "1.Si" << endl
@@ -211,7 +211,7 @@ bienvenida:
             cin >> horasParqueo;
             system("cls");
             // Llamado ala funcion para generar y mostrar ticket
-            mostrarTicket(horasParqueo, costoHora);
+            mostrarTicket();
             // Desicion: continuar el programa
             cout << "Desea volver al menu principal e ingresar otro vehiculo?" << endl
                  << "1.Si" << endl
@@ -429,7 +429,7 @@ void buscadorPlacas()
 }
 
 // Funcion de crear y mostrar tickets
-void mostrarTicket(double horasParqueo, double costoHora)
+void mostrarTicket()
 {
     // Operacion: para obtener el total a pagar
     double totalParqueo = horasParqueo * costoHora;
@@ -527,7 +527,7 @@ void GuardarporDia()
     escituraArchivoDia();
 }
 //Función para mostrar auto con mayor ingreso
-void mostrarAutoConMayorFrecuencia(int carro, int moto, int discapacitado) {
+void mostrarAutoConMayorFrecuencia() {
     string tipoAuto = "";
 
     if (carro > moto && carro > discapacitado) {
