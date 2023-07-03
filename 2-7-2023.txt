@@ -1,0 +1,4 @@
+1234
+ la cantidad de carros hasta ahora es: 0
+ la cantidad de motos hasta ahora es: 0
+ la cantidad de autos para discapacitados hasta ahora es: 1
